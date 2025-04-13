@@ -18,7 +18,7 @@ A simple and interactive web-based application for managing and recording cricke
 
 - **Frontend**: HTML5, CSS3, Bootstrap
 - **Backend**: Python, Django
-- **Database**: SQLite3
+- **Database**: MySQL 
 - **Tools**: Atom / VS Code, Git, GitHub
 
 ---
