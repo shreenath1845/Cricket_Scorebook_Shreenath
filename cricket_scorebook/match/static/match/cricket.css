@@ -1,0 +1,197 @@
+/* General Reset */
+body, h1, h3, table, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    padding: 15px; /* Reduced padding */
+}
+
+/* Main Container */
+.scorebook {
+    max-width: 1000px; /* Slightly smaller container width */
+    margin: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+    padding: 15px; /* Reduced padding */
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    font-size: 1.6rem; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin */
+    color: #2c3e50;
+}
+
+/* Header Fields */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; /* Reduced gap between sections */
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.header div {
+    flex: 1;
+    min-width: 180px; /* Slightly smaller minimum width */
+}
+
+/* Input and Select Fields */
+.header input, .header select {
+    width: 100%;
+    padding: 6px 10px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px; /* Reduced font size */
+    background: #f7f9fa;
+    color: #555;
+}
+
+.header input:focus, .header select:focus {
+    border-color: #b2bec3;
+    outline: none;
+    background-color: #eef4f7;
+}
+
+/* Buttons */
+button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Reduced padding */
+    border-radius: 4px; /* Slightly smaller radius */
+    cursor: pointer;
+    font-size: 13px; /* Reduced font size */
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a6268;
+}
+
+/* Team Scores Display */
+.innings-score {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px; /* Reduced font size */
+    font-weight: bold;
+}
+
+.innings-score div {
+    background: #ecf0f1;
+    padding: 8px; /* Reduced padding */
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px; /* Reduced margin */
+    background-color: #fcfcfc;
+}
+
+table th, table td {
+    text-align: center;
+    padding: 8px 10px; /* Reduced padding */
+    border: 1px solid #ddd;
+    font-size: 13px; /* Reduced font size */
+}
+
+table th {
+    background-color: #dfe6e9;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+/* Highlight specific columns */
+table td:nth-child(6), table td:nth-child(8) {
+    background-color: #f0f5f9;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Balls Container */
+.balls-container {
+    display: flex;
+    gap: 4px; /* Reduced gap */
+    margin-bottom: 15px;
+}
+
+.balls-container span {
+    background-color: #95a5a6;
+    color: white;
+    padding: 4px; /* Reduced padding */
+    border-radius: 50%;
+    font-size: 11px; /* Reduced font size */
+    text-align: center;
+    display: inline-block;
+    width: 22px; /* Reduced width */
+    height: 22px; /* Reduced height */
+    line-height: 22px; /* Adjusted line height */
+}
+
+/* Buttons Container */
+.buttons-container {
+    text-align: center;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.buttons-container button {
+    margin: 5px;
+}
+
+/* Score Display */
+#score-display, #cumulative-score {
+    font-size: 14px; /* Reduced font size */
+    font-weight: bold;
+    text-align: center;
+    margin: 8px 0; /* Reduced margin */
+    color: #2d3436;
+}
+
+/* Declare Winner Button */
+#declareWinnerButton {
+    background-color: #27ae60;
+    font-size: 14px; /* Reduced font size */
+    font-weight: bold;
+    padding: 8px 16px; /* Reduced padding */
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#declareWinnerButton:hover {
+    background-color: #218c54;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header div {
+        min-width: 100%;
+    }
+
+    .innings-score {
+        flex-direction: column;
+        align-items: center;
+    }
+}
